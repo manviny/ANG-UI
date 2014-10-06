@@ -15,8 +15,9 @@ $ // install plugin
 $ cordova plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-device-orientation.git  
 $ // create a new folder  
 $ mkdir webapp && cd webapp  
-$ // bootstrap the application  
-$ yo angular myApp  
+$ // download this zip (angularjs + onsenui) and unzip in webapp  
+$ bower install  
+$ npm install  
 $ // to build  
 $ grunt  
 $ // and for a preview  
@@ -28,27 +29,6 @@ $ // or for a specific platform
 $ cordova build ios  
 ```
 
-
-#### 2. Download this zip (angularjs+onsenui)
-* unzip on the root folder
-* rename webapp-master to webapp
-* cd webapp
-* bower install
-* npm install
-
-##### you should get the following in the root
-
---config.xml
-
---hooks
-
---platforms
-
---plugins
-
---webapp
-
---www
 
 #### 3. compile and emulate for develpment
 
